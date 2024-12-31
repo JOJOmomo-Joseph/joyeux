@@ -1,0 +1,91 @@
+/* Fichier style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #000428, #004e92);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    animation: glow 2s infinite alternate;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-top: 20px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+form button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #f57c00;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: none;
+}
+
+#confirmationMessage.visible {
+    display: block;
+}
+
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Animation Glow */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff9800, 0 0 30px #ff5722;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff9800, 0 0 40px #ff5722;
+    }
+}
